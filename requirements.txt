@@ -1,0 +1,2 @@
+openai==0.27.6
+setuptools==67.8.0
