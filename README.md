@@ -9,6 +9,8 @@ Consultant provides a convenient way to interact with OpenAI's GPT-3.5 to refact
 
 > pip install -r requirements.txt
 
+> pip install e . 
+
 ## Usage
 1. Export your OpenAI API key as an environment variable:
    > export OPENAI_API_KEY= < your key >
