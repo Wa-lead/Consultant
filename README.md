@@ -39,7 +39,7 @@ Consultant provides a convenient way to interact with OpenAI's GPT-3.5 to refact
     #OUTPUT:
     """
     def find_common_elements(a, b):
-    return list(set(a).intersection(b))
+       return list(set(a).intersection(b))
     """
    ```
 
