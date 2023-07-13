@@ -18,7 +18,7 @@ Consultant provides a convenient way to interact with OpenAI's GPT-3.5 to refact
 2. Use it as a decorator:
    ```python
    from Consultant.consultant import consultant
-    from Consultant.prompt import Prompt
+   from Consultant.prompt import Prompt
 
 
     @consultant(Prompt.ENGINEER)
