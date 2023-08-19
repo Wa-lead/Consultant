@@ -16,32 +16,29 @@ Consultant provides a convenient way to interact with OpenAI's GPT-3.5 to refact
    > export OPENAI_API_KEY= < your key >
 
 2. Use it as a decorator:
-   ```python
-   from Consultant.consultant import consultant
-   from Consultant.prompt import Prompt
 
-
-    @consultant(Prompt.ENGINEER)
-    def unoptimized_function(a,b):
-        c = [] #common elements between a and b
-        for i in a:
-            for j in b:
-                if i == j:
-                    c.append(i)
-        return c
-
-
-    a = [1,2,3]
-    b = [2,3,4]
-
-    unoptimized_function(a,b)
-
-    #OUTPUT:
-    """
-    def find_common_elements(a, b):
-       return list(set(a).intersection(b))
-    """
    ```
+
+   ### Add your own prompts
+
+   ```python
+   from Consultant.prompt import Prompt
+   from Consultant.consultant import Consultant
+
+   my_custom_prompt = Prompt(
+                           name = 'Documenter',
+                           description='This prompt aims to provide well documented code.',
+                           instruction='Your job is to read a given code and provide standard documentation and comments for it.',
+                           )
+   @Consultant.consult(my_custom_prompt)
+   def smallest_number(list: list) -> int:
+      smallest = list[0]
+      for number in list:
+         if number < smallest:
+               smallest = number
+      return smallest
+
+      ```
 
 
 ## Contributing
