@@ -22,7 +22,7 @@ https://github.com/Wa-lead/Consultant/assets/81301826/bc7747a9-6be0-44f4-ae74-6c
 3. Add your custom prompts
 
    ```python
-     from Consultant.prompt import Prompt
+   from Consultant.prompt import Prompt
    from Consultant.consultant import Consultant
    
    my_custom_prompt = Prompt(
