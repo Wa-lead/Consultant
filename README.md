@@ -28,7 +28,7 @@ https://github.com/Wa-lead/Consultant/assets/81301826/bc7747a9-6be0-44f4-ae74-6c
    my_custom_prompt = Prompt(
                             name = 'Documenter',
                             description='This prompt aims to provide well documented code.',
-                           instruction='Your job is to read a given code and provide standard documentation, along with clarifying comments and enforce types. You should modify the code accordingly',
+                            instruction='Your job is to read a given code and provide standard documentation, along with clarifying comments and enforce types. You should modify the code accordingly',
                            )
    @Consultant.consult(my_custom_prompt)
    def smallest_number(list):
