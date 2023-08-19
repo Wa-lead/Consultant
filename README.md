@@ -17,9 +17,9 @@ Consultant provides a convenient way to interact with OpenAI's GPT-3.5 to refact
 
 2. Use it as a decorator:
 
-   ```
+https://github.com/Wa-lead/Consultant/assets/81301826/bc7747a9-6be0-44f4-ae74-6c046025110e
 
-   ### Add your own prompts
+3. Add your own prompts
 
    ```python
    from Consultant.prompt import Prompt
